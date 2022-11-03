@@ -1,27 +1,27 @@
 .catalog {
   display: grid;
-  grid-template-columns: repeat(1, 200px);
+  grid-template-columns: repeat(1, $cardwidth);
   gap: 48px;
   justify-content: center;
   justify-items: center;
 
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, $cardwidth);
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, $cardwidth);
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, $cardwidth);
   }
 
   &__card {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: $cardwidth;
     height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
